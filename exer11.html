@@ -7,10 +7,13 @@
         <script>
 
             // QUESTÃO 11
-            var t_vendido = Number(import('Total vendido durant o mês: '))
+            
+            var t_vendido = Number(import('Total vendido durante o mês: '))
             var porcentagem = Number(import('Porcentagem da comissão: '))
-            let v_comissão = t_vendido * (porcentagem / 100)
-            let v_recebido = 
+            let v_comissao = t_vendido * (porcentagem / 100)
+            let v_recebido = t_vendido + v_comissao
+
+            alert('O valor da comissão é: ' + v_comissao + '. O total recebido é: ' + v_recebido)
             
 
         </script>
